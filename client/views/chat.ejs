@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+</head>
+<link rel="stylesheet" href="\css\chat.css">
+<body>
+
+    <section id="chat-heading">
+        <p id="chat-heading-p"></p>
+    </section>
+    <main id="whole-system">
+        <div class="chat-container">
+        
+            <section id="chat-section">
+            </section>
+    
+            <div id="form" class="send">
+                <input type="text" id="message_input" name="message_input" placeholder="Message....">
+                <button id="send">send</button>
+            </div>
+        </div>
+        <div class="online-users-container">
+            <h2>Users Online</h2>
+            <ul class="onlineuserlist"></ul>
+        </div>
+    </main>
+    <audio id="notification_sound" src="/music/sound.mp3"></audio>
+</body>
+
+<script src="http://localhost:8500/socket.io/socket.io.js"></script>
+<script src="/javascript/chat.js"></script>
+</html>

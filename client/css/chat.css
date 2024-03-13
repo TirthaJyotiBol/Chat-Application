@@ -1,0 +1,199 @@
+.chat-container{
+    height: 75vh;
+    width: 60%;
+    background-color: rgb(165, 165, 165);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 0px solid black;
+    margin: auto;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 25px;
+    margin-left: 160px;
+}
+
+#chat-heading{
+    height: 45px;
+    background-color: rgb(32, 255, 80);
+    border-radius: 25px;
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+#chat-heading >p{
+    position: relative;
+    top: 10px;
+    margin-left: 25px;
+    font-size: 1.2rem;
+    margin-top: 25px;
+    color: white;
+}
+
+#chat-section{
+    height: 80%;
+    overflow-y: scroll;
+    /* margin-top: 60px; */
+    padding: 8px;
+}
+
+
+#form{
+    margin-top: 20px;
+    width: 100%;
+}
+
+#form input{
+    width: 45vw;
+    height: 28px;
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding-left: 25px;
+    margin-left: 50px;
+}
+
+#form button{
+    width: 5vw;
+    height: 30px;
+    margin-left: 8px;
+    padding: 9px;
+    background-color: rgb(5, 231, 54);
+    color: white;
+    border: none;
+}
+
+.message-box{
+    display: flex;
+    margin: 25px;
+    margin-left: 2px;
+}
+
+.avatar{
+    margin: 10px;
+    border: 1px solid red;
+    border-radius: 40px;
+    height: fit-content;
+    width: fit-content;
+    padding: 8px;
+    color: white;
+    background-color: red;
+}
+
+.message{
+    background-color: white;
+    padding: 15px;
+    border-top-left-radius: 14px;
+    border-bottom-right-radius: 25px;
+    max-width: 500px;
+    min-width: 150px;
+    word-wrap: break-word;
+}
+
+.name{
+    margin-right: 8px;
+}
+
+.message-box-right{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 25px;
+    margin-right: 25px;
+}
+
+.message-box-right .name{
+    text-align: right !important;
+}
+
+.message-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.time{
+    margin-left: 35px;
+}
+
+
+.online-users-container{
+    width: 20%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.onlineuserlist li{
+    list-style:none;
+    margin: 8px;
+    font-size: 1.5rem;
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+    font-size: 1.1rem;
+    padding: 8px;
+    padding-left: 15px;
+    width: 150px;
+}
+
+.online-users-container h2{
+    text-transform: uppercase;
+}
+
+
+
+main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.newjoineemessage{
+    text-align: center;
+    color: rgb(255, 238, 0);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.userleftmessage{
+    text-align: center;
+    color: rgb(134, 2, 2);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.my-message{
+    background-color: rgb(15, 139, 255);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* Hide the scrollbar track */
+#chat-section::-webkit-scrollbar-track {
+    display: none;
+}
+
+/* Define a custom scrollbar */
+#chat-section::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent; /* Hide the scrollbar track */
+}
+
+/* Define the scrollbar thumb */
+#chat-section::-webkit-scrollbar-thumb {
+    background-color: rgb(206, 206, 206); /* Color of the scrollbar thumb */
+    border-radius: 1px;
+}
+
+/* Show the scrollbar only when scrolling */
+#chat-section {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 0, 0, 0.233) transparent; /* Color of the scrollbar thumb and track */
+}
